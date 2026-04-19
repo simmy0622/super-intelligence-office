@@ -12,6 +12,8 @@
 [![Download](https://img.shields.io/badge/Download-macOS-blue?style=for-the-badge&logo=apple)](https://super-ai-office.pages.dev)
 [![License: MIT](https://img.shields.io/badge/License-MIT-gray?style=for-the-badge)](LICENSE)
 
+English · [中文](README.zh.md)
+
 </div>
 
 ---
