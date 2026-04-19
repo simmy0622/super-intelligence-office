@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		022ED2BEACA4D6EC322D6487 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FAA93E721189BF5932AD83 /* NotificationsView.swift */; };
+		0DF7095D4EF9B9CD59098C73 /* agent-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD8AE493F8B63D27226E4A34 /* agent-2.jpg */; };
+		112C9261EF7E0E960EB2678B /* HomeFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412F58B07C31819FB2D78615 /* HomeFeedView.swift */; };
+		13EDECFB2D4C96B45659AD6A /* SalonServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD7ECE8CC53F619258B4101 /* SalonServices.swift */; };
+		1689B31E9425EA1BEB98C32B /* DesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = D193A64846C837AB6F2D4E1E /* DesignTokens.swift */; };
+		1AB88CA0D1881820480D576A /* ChromeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D0D17E778B7412971A8EB /* ChromeState.swift */; };
+		1DFF903F0B31C1BB040DD809 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6CD097146AB65DD79B5BF0 /* Components.swift */; };
+		1E511BFBECAF846F50C7706C /* AppShellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37194C0077307DFB761B0F4 /* AppShellView.swift */; };
+		2BEF0BED9A92224747F44D9B /* LocalSalonRuntime.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC595967D59F92F84E45E6A3 /* LocalSalonRuntime.swift */; };
+		3F6235C3D1780DBA64970CBC /* AvatarStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA17B5AE3C956A064D73A51F /* AvatarStorage.swift */; };
+		59267521E472A69F67AAD727 /* ProviderKeysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C74CBE79E441B6BF189F3C /* ProviderKeysView.swift */; };
+		63DE947ACBF8DC34D4202D5A /* APIKeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BB423FFAB4EE5F870334E4 /* APIKeyStore.swift */; };
+		7123F2FB32657B13D780DAC7 /* PostCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2981AC2F4A435D1A26A4CE5 /* PostCard.swift */; };
+		74F8F43059BCC872FDD21A15 /* agent-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FFA9AFAF00BC5933C6C7F4F /* agent-4.jpg */; };
+		7EEE1CF0513E787B80829FC9 /* agent-5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5057F4E226D732341EED18B /* agent-5.jpg */; };
+		7F8AD91DE5F061212F499510 /* ProviderClients.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BBFC4CE99D216EF87433C0 /* ProviderClients.swift */; };
+		7FFF219C511A7B4FA3AA4E24 /* AgentsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F959702932D4EBDF55546 /* AgentsTabView.swift */; };
+		89E24927E944565C27107955 /* ComposerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C575C39DCB72DA5ED8F778BF /* ComposerSheet.swift */; };
+		8A5DDB4B24C2C96950E81505 /* ProviderModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8494F7242B5F3FF22E755B5B /* ProviderModels.swift */; };
+		8CA739A5F5F9700BB22D02C2 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9941D0E35E5D091E72BCF8 /* SearchView.swift */; };
+		936A67CC5EB6EE999D0BB6B3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 34ABCE3E2845462D658ACBA9 /* libsqlite3.tbd */; };
+		957D3ACB477F775F74928488 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2883A71472244A00BA2F9D37 /* LikeButton.swift */; };
+		977554FC692214BAA52C63EA /* agent-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF7F09FD48D1B3909B2B9EF /* agent-3.jpg */; };
+		9C791286E99190C122FA4D7C /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB8BD4D7FBFF033E397BB18 /* PostDetailView.swift */; };
+		9F0A444AEF801AD1C92FF118 /* agent-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7DEB2CE4F9CAC0A3BF435007 /* agent-1.jpg */; };
+		9F642A82C845BB31FE319372 /* AgentRuntime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2329AF6ADAFB63C91FAC007A /* AgentRuntime.swift */; };
+		A589EB7AEA3515A9BE3EF959 /* SalonMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F125C53B4FDE027A95AF1E /* SalonMobileApp.swift */; };
+		A855B92CB286EA472126F7B3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A742F3430C50C88286BB338A /* Extensions.swift */; };
+		AE57879CEB8A3A3039E5A89E /* SQLiteDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7649E95DAB2D4448A7EFADFC /* SQLiteDatabase.swift */; };
+		B433BE495BFF2983534A0F24 /* AgentScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282591AD869D47BC8F962267 /* AgentScheduler.swift */; };
+		B740082C643CE6895FDFEEE8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51631568C79BCCB35CE514CE /* ProfileView.swift */; };
+		BCE4903BE430095F836E564F /* AgentToolRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD1A9CCB07D4761B123699 /* AgentToolRegistry.swift */; };
+		C41C69C1F9FFED88DCED8229 /* ReplySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76CA87050B811E49F436E6 /* ReplySheet.swift */; };
+		DCF19F21A21E3273F8A7E491 /* AgentRunsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B925F3D5C026ED28876F3FBA /* AgentRunsView.swift */; };
+		E4DF3FD2F7B323E59D416C37 /* agent-6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F191FC23F45B570E97F57C97 /* agent-6.jpg */; };
+		E5DCE83FB69AF6AEA48D7584 /* AgentToolExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EFC0E579EE75849B1B2EC7 /* AgentToolExecutor.swift */; };
+		E6B52DC4D164105DC8B22B78 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF452A0D1BE21A112CA0C7D /* Models.swift */; };
+		FB0A198AEA484860427D70E1 /* SalonStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284392070115A0034CE1A72D /* SalonStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0EB8BD4D7FBFF033E397BB18 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
+		0F6CD097146AB65DD79B5BF0 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		1AD7ECE8CC53F619258B4101 /* SalonServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonServices.swift; sourceTree = "<group>"; };
+		2329AF6ADAFB63C91FAC007A /* AgentRuntime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentRuntime.swift; sourceTree = "<group>"; };
+		25BB423FFAB4EE5F870334E4 /* APIKeyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeyStore.swift; sourceTree = "<group>"; };
+		282591AD869D47BC8F962267 /* AgentScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentScheduler.swift; sourceTree = "<group>"; };
+		284392070115A0034CE1A72D /* SalonStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonStore.swift; sourceTree = "<group>"; };
+		2883A71472244A00BA2F9D37 /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
+		33C74CBE79E441B6BF189F3C /* ProviderKeysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderKeysView.swift; sourceTree = "<group>"; };
+		34ABCE3E2845462D658ACBA9 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		3FFA9AFAF00BC5933C6C7F4F /* agent-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "agent-4.jpg"; sourceTree = "<group>"; };
+		412F58B07C31819FB2D78615 /* HomeFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedView.swift; sourceTree = "<group>"; };
+		46DD1A9CCB07D4761B123699 /* AgentToolRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentToolRegistry.swift; sourceTree = "<group>"; };
+		4C9941D0E35E5D091E72BCF8 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		51631568C79BCCB35CE514CE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		5AF452A0D1BE21A112CA0C7D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		5C5F959702932D4EBDF55546 /* AgentsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsTabView.swift; sourceTree = "<group>"; };
+		7649E95DAB2D4448A7EFADFC /* SQLiteDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDatabase.swift; sourceTree = "<group>"; };
+		7DEB2CE4F9CAC0A3BF435007 /* agent-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "agent-1.jpg"; sourceTree = "<group>"; };
+		8494F7242B5F3FF22E755B5B /* ProviderModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderModels.swift; sourceTree = "<group>"; };
+		865D0D17E778B7412971A8EB /* ChromeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromeState.swift; sourceTree = "<group>"; };
+		94EFC0E579EE75849B1B2EC7 /* AgentToolExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentToolExecutor.swift; sourceTree = "<group>"; };
+		9F76CA87050B811E49F436E6 /* ReplySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplySheet.swift; sourceTree = "<group>"; };
+		A37194C0077307DFB761B0F4 /* AppShellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShellView.swift; sourceTree = "<group>"; };
+		A742F3430C50C88286BB338A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AC595967D59F92F84E45E6A3 /* LocalSalonRuntime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSalonRuntime.swift; sourceTree = "<group>"; };
+		B2981AC2F4A435D1A26A4CE5 /* PostCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCard.swift; sourceTree = "<group>"; };
+		B8A19B31F6C605AD59E556A6 /* SalonMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalonMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B925F3D5C026ED28876F3FBA /* AgentRunsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentRunsView.swift; sourceTree = "<group>"; };
+		B9BBFC4CE99D216EF87433C0 /* ProviderClients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderClients.swift; sourceTree = "<group>"; };
+		BA17B5AE3C956A064D73A51F /* AvatarStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarStorage.swift; sourceTree = "<group>"; };
+		C5057F4E226D732341EED18B /* agent-5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "agent-5.jpg"; sourceTree = "<group>"; };
+		C575C39DCB72DA5ED8F778BF /* ComposerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposerSheet.swift; sourceTree = "<group>"; };
+		CD8AE493F8B63D27226E4A34 /* agent-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "agent-2.jpg"; sourceTree = "<group>"; };
+		D193A64846C837AB6F2D4E1E /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
+		D6F125C53B4FDE027A95AF1E /* SalonMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonMobileApp.swift; sourceTree = "<group>"; };
+		E1FAA93E721189BF5932AD83 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		ECF7F09FD48D1B3909B2B9EF /* agent-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "agent-3.jpg"; sourceTree = "<group>"; };
+		F191FC23F45B570E97F57C97 /* agent-6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "agent-6.jpg"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F2010012CCD60962E2E3B13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				936A67CC5EB6EE999D0BB6B3 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0853F1E9DB060CA4BD34DE4E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B925F3D5C026ED28876F3FBA /* AgentRunsView.swift */,
+				5C5F959702932D4EBDF55546 /* AgentsTabView.swift */,
+				A37194C0077307DFB761B0F4 /* AppShellView.swift */,
+				BA17B5AE3C956A064D73A51F /* AvatarStorage.swift */,
+				865D0D17E778B7412971A8EB /* ChromeState.swift */,
+				0F6CD097146AB65DD79B5BF0 /* Components.swift */,
+				C575C39DCB72DA5ED8F778BF /* ComposerSheet.swift */,
+				D193A64846C837AB6F2D4E1E /* DesignTokens.swift */,
+				A742F3430C50C88286BB338A /* Extensions.swift */,
+				412F58B07C31819FB2D78615 /* HomeFeedView.swift */,
+				2883A71472244A00BA2F9D37 /* LikeButton.swift */,
+				5AF452A0D1BE21A112CA0C7D /* Models.swift */,
+				E1FAA93E721189BF5932AD83 /* NotificationsView.swift */,
+				B2981AC2F4A435D1A26A4CE5 /* PostCard.swift */,
+				0EB8BD4D7FBFF033E397BB18 /* PostDetailView.swift */,
+				51631568C79BCCB35CE514CE /* ProfileView.swift */,
+				33C74CBE79E441B6BF189F3C /* ProviderKeysView.swift */,
+				9F76CA87050B811E49F436E6 /* ReplySheet.swift */,
+				D6F125C53B4FDE027A95AF1E /* SalonMobileApp.swift */,
+				284392070115A0034CE1A72D /* SalonStore.swift */,
+				4C9941D0E35E5D091E72BCF8 /* SearchView.swift */,
+				2C9295C5FB224B60D288D2B0 /* Core */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		20B028C027E52D44B23549E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34ABCE3E2845462D658ACBA9 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C427E433AF4EAB5E12B6998 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C7F57EF404A97D5EFEE7CA2A /* AgentAvatars */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2C9295C5FB224B60D288D2B0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				76BB796BEE317AB09B28A0BF /* Agents */,
+				F0367E79481ED37FA92B92A5 /* Database */,
+				3ABB42C381CBC4197BE7FFA0 /* Providers */,
+				F89FFD925037BA3390950BED /* Runtime */,
+				912F4CD8F52E3799C042A682 /* Security */,
+				703E4A853CFBB16DD95B14E5 /* Services */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3ABB42C381CBC4197BE7FFA0 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				B9BBFC4CE99D216EF87433C0 /* ProviderClients.swift */,
+				8494F7242B5F3FF22E755B5B /* ProviderModels.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		703E4A853CFBB16DD95B14E5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1AD7ECE8CC53F619258B4101 /* SalonServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		76BB796BEE317AB09B28A0BF /* Agents */ = {
+			isa = PBXGroup;
+			children = (
+				2329AF6ADAFB63C91FAC007A /* AgentRuntime.swift */,
+				282591AD869D47BC8F962267 /* AgentScheduler.swift */,
+				94EFC0E579EE75849B1B2EC7 /* AgentToolExecutor.swift */,
+				46DD1A9CCB07D4761B123699 /* AgentToolRegistry.swift */,
+			);
+			path = Agents;
+			sourceTree = "<group>";
+		};
+		8D0EDEA258232B7B27250661 = {
+			isa = PBXGroup;
+			children = (
+				2C427E433AF4EAB5E12B6998 /* Resources */,
+				0853F1E9DB060CA4BD34DE4E /* Sources */,
+				20B028C027E52D44B23549E2 /* Frameworks */,
+				E2A576271A27F7DB82E0AA17 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		912F4CD8F52E3799C042A682 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				25BB423FFAB4EE5F870334E4 /* APIKeyStore.swift */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		C7F57EF404A97D5EFEE7CA2A /* AgentAvatars */ = {
+			isa = PBXGroup;
+			children = (
+				7DEB2CE4F9CAC0A3BF435007 /* agent-1.jpg */,
+				CD8AE493F8B63D27226E4A34 /* agent-2.jpg */,
+				ECF7F09FD48D1B3909B2B9EF /* agent-3.jpg */,
+				3FFA9AFAF00BC5933C6C7F4F /* agent-4.jpg */,
+				C5057F4E226D732341EED18B /* agent-5.jpg */,
+				F191FC23F45B570E97F57C97 /* agent-6.jpg */,
+			);
+			path = AgentAvatars;
+			sourceTree = "<group>";
+		};
+		E2A576271A27F7DB82E0AA17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8A19B31F6C605AD59E556A6 /* SalonMobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0367E79481ED37FA92B92A5 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				7649E95DAB2D4448A7EFADFC /* SQLiteDatabase.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		F89FFD925037BA3390950BED /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				AC595967D59F92F84E45E6A3 /* LocalSalonRuntime.swift */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B61ACAF9CCF55F4FF9AD6787 /* SalonMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1A923B9B09B83F9BA166C42 /* Build configuration list for PBXNativeTarget "SalonMobile" */;
+			buildPhases = (
+				4FCFD73026CE4BF409BBC6FD /* Sources */,
+				08964BE12E3490094B922A66 /* Resources */,
+				4F2010012CCD60962E2E3B13 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SalonMobile;
+			packageProductDependencies = (
+			);
+			productName = SalonMobile;
+			productReference = B8A19B31F6C605AD59E556A6 /* SalonMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1A1589B7687D1868BE6C206 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B61ACAF9CCF55F4FF9AD6787 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3B4F53F77F4D9520F5C4C72B /* Build configuration list for PBXProject "SalonMobile" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 8D0EDEA258232B7B27250661;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E2A576271A27F7DB82E0AA17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B61ACAF9CCF55F4FF9AD6787 /* SalonMobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08964BE12E3490094B922A66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F0A444AEF801AD1C92FF118 /* agent-1.jpg in Resources */,
+				0DF7095D4EF9B9CD59098C73 /* agent-2.jpg in Resources */,
+				977554FC692214BAA52C63EA /* agent-3.jpg in Resources */,
+				74F8F43059BCC872FDD21A15 /* agent-4.jpg in Resources */,
+				7EEE1CF0513E787B80829FC9 /* agent-5.jpg in Resources */,
+				E4DF3FD2F7B323E59D416C37 /* agent-6.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FCFD73026CE4BF409BBC6FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63DE947ACBF8DC34D4202D5A /* APIKeyStore.swift in Sources */,
+				DCF19F21A21E3273F8A7E491 /* AgentRunsView.swift in Sources */,
+				9F642A82C845BB31FE319372 /* AgentRuntime.swift in Sources */,
+				B433BE495BFF2983534A0F24 /* AgentScheduler.swift in Sources */,
+				E5DCE83FB69AF6AEA48D7584 /* AgentToolExecutor.swift in Sources */,
+				BCE4903BE430095F836E564F /* AgentToolRegistry.swift in Sources */,
+				7FFF219C511A7B4FA3AA4E24 /* AgentsTabView.swift in Sources */,
+				1E511BFBECAF846F50C7706C /* AppShellView.swift in Sources */,
+				3F6235C3D1780DBA64970CBC /* AvatarStorage.swift in Sources */,
+				1AB88CA0D1881820480D576A /* ChromeState.swift in Sources */,
+				1DFF903F0B31C1BB040DD809 /* Components.swift in Sources */,
+				89E24927E944565C27107955 /* ComposerSheet.swift in Sources */,
+				1689B31E9425EA1BEB98C32B /* DesignTokens.swift in Sources */,
+				A855B92CB286EA472126F7B3 /* Extensions.swift in Sources */,
+				112C9261EF7E0E960EB2678B /* HomeFeedView.swift in Sources */,
+				957D3ACB477F775F74928488 /* LikeButton.swift in Sources */,
+				2BEF0BED9A92224747F44D9B /* LocalSalonRuntime.swift in Sources */,
+				E6B52DC4D164105DC8B22B78 /* Models.swift in Sources */,
+				022ED2BEACA4D6EC322D6487 /* NotificationsView.swift in Sources */,
+				7123F2FB32657B13D780DAC7 /* PostCard.swift in Sources */,
+				9C791286E99190C122FA4D7C /* PostDetailView.swift in Sources */,
+				B740082C643CE6895FDFEEE8 /* ProfileView.swift in Sources */,
+				7F8AD91DE5F061212F499510 /* ProviderClients.swift in Sources */,
+				59267521E472A69F67AAD727 /* ProviderKeysView.swift in Sources */,
+				8A5DDB4B24C2C96950E81505 /* ProviderModels.swift in Sources */,
+				C41C69C1F9FFED88DCED8229 /* ReplySheet.swift in Sources */,
+				AE57879CEB8A3A3039E5A89E /* SQLiteDatabase.swift in Sources */,
+				A589EB7AEA3515A9BE3EF959 /* SalonMobileApp.swift in Sources */,
+				13EDECFB2D4C96B45659AD6A /* SalonServices.swift in Sources */,
+				FB0A198AEA484860427D70E1 /* SalonStore.swift in Sources */,
+				8CA739A5F5F9700BB22D02C2 /* SearchView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4C788D903F9D24C278C3D0A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJ9KRJZ863;
+				INFOPLIST_FILE = SalonMobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shinmuchen.SalonMobile;
+				PRODUCT_NAME = SalonMobile;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9AB398290E259F2D74BDD8CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		A8D506F361F9FFD252E53FC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJ9KRJZ863;
+				INFOPLIST_FILE = SalonMobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shinmuchen.SalonMobile;
+				PRODUCT_NAME = SalonMobile;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ED4133BDB4FF800AE6DB588C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B4F53F77F4D9520F5C4C72B /* Build configuration list for PBXProject "SalonMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AB398290E259F2D74BDD8CD /* Debug */,
+				ED4133BDB4FF800AE6DB588C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B1A923B9B09B83F9BA166C42 /* Build configuration list for PBXNativeTarget "SalonMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C788D903F9D24C278C3D0A9 /* Debug */,
+				A8D506F361F9FFD252E53FC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1A1589B7687D1868BE6C206 /* Project object */;
+}

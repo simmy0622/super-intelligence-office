@@ -1,0 +1,413 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: rgb(255, 255, 255);
+}
+
+.dark body {
+  background: rgb(0, 0, 0);
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+/* 移除默认滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(185, 202, 211);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(136, 153, 166);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgb(62, 65, 68);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgb(91, 96, 100);
+}
+
+/* 选中文字样式 */
+::selection {
+  background: rgba(29, 155, 240, 0.3);
+}
+
+.dark ::selection {
+  background: rgba(29, 155, 240, 0.5);
+}
+
+/* 平滑滚动 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 链接样式 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 按钮重置 */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+/* 图片重置 */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Material Symbols 图标 */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+/* 工具类 */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* 通用动画 */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+/* Pixel office map */
+.office-map-pixel {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.office-map-agent {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: filter 120ms ease;
+}
+
+.office-map-agent:hover {
+  filter: drop-shadow(0 0 6px rgba(255, 209, 102, 0.85));
+}
+
+.office-map-sprite {
+  transform-box: fill-box;
+  transform-origin: center bottom;
+}
+
+.office-map-sprite-idle {
+  animation: office-map-idle 2.4s steps(4, end) infinite;
+}
+
+.office-map-sprite-thinking {
+  animation: office-map-thinking 1.8s steps(3, end) infinite;
+}
+
+.office-map-sprite-typing {
+  animation: office-map-typing-body 0.7s steps(2, end) infinite;
+}
+
+.office-map-sprite-walk {
+  animation: office-map-walk-route 6.8s steps(12, end) infinite;
+}
+
+.office-map-sprite-sleep {
+  animation: office-map-sleep 3s steps(4, end) infinite;
+}
+
+.office-map-sprite-typing .office-map-arm-left,
+.office-map-sprite-typing .office-map-arm-right {
+  animation: office-map-type-arms 0.34s steps(2, end) infinite;
+}
+
+.office-map-sprite-walk .office-map-leg-left,
+.office-map-sprite-walk .office-map-leg-right,
+.office-map-sprite-walk .office-map-nomi-paw-left,
+.office-map-sprite-walk .office-map-nomi-paw-right {
+  animation: office-map-walk-limbs 0.42s steps(2, end) infinite;
+}
+
+.office-map-sprite-walk .office-map-leg-right,
+.office-map-sprite-walk .office-map-nomi-paw-right {
+  animation-delay: 0.21s;
+}
+
+.office-map-nomi .office-map-nomi-tail {
+  transform-box: fill-box;
+  transform-origin: left center;
+  animation: office-map-tail 1.4s steps(3, end) infinite;
+}
+
+.office-map-sprite-sleep .office-map-nomi-tail {
+  animation-duration: 3.2s;
+}
+
+.office-map-thought {
+  animation: office-map-thought 1.2s steps(3, end) infinite;
+}
+
+.office-map-sheet-frame {
+  opacity: 0;
+}
+
+.office-map-human-frame-0,
+.office-map-human-frame-1,
+.office-map-human-frame-2,
+.office-map-human-frame-3 {
+  animation: office-map-sprite-frame-4 0.72s steps(1, end) infinite;
+}
+
+.office-map-human-frame-1 { animation-delay: -0.18s; }
+.office-map-human-frame-2 { animation-delay: -0.36s; }
+.office-map-human-frame-3 { animation-delay: -0.54s; }
+
+.office-map-cat-frame-0,
+.office-map-cat-frame-1,
+.office-map-cat-frame-2,
+.office-map-cat-frame-3,
+.office-map-cat-frame-4,
+.office-map-cat-frame-5 {
+  animation: office-map-sprite-frame-6 0.72s steps(1, end) infinite;
+}
+
+.office-map-cat-frame-1 { animation-delay: -0.12s; }
+.office-map-cat-frame-2 { animation-delay: -0.24s; }
+.office-map-cat-frame-3 { animation-delay: -0.36s; }
+.office-map-cat-frame-4 { animation-delay: -0.48s; }
+.office-map-cat-frame-5 { animation-delay: -0.6s; }
+
+.office-map-presence {
+  animation: office-map-presence 1.8s steps(4, end) infinite;
+}
+
+.office-map-blink {
+  animation: office-map-blink 1.2s steps(2, end) infinite;
+}
+
+.office-map-paw {
+  animation: office-map-paw 2.6s steps(3, end) infinite;
+}
+
+@keyframes office-map-presence {
+  0%,
+  100% {
+    opacity: 0.12;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(1.12);
+  }
+}
+
+@keyframes office-map-idle {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1.5px);
+  }
+}
+
+@keyframes office-map-thinking {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-1px) rotate(-2deg);
+  }
+}
+
+@keyframes office-map-typing-body {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(1px);
+  }
+}
+
+@keyframes office-map-type-arms {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+}
+
+@keyframes office-map-walk-route {
+  0%,
+  14% {
+    transform: translate(0, 0);
+  }
+  42%,
+  58% {
+    transform: translate(var(--office-walk-dx), var(--office-walk-dy));
+  }
+  86%,
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes office-map-walk-limbs {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+}
+
+@keyframes office-map-sleep {
+  0%,
+  100% {
+    transform: scaleY(1) translateY(0);
+  }
+  50% {
+    transform: scaleY(0.96) translateY(1px);
+  }
+}
+
+@keyframes office-map-tail {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes office-map-thought {
+  0%,
+  100% {
+    opacity: 0.65;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes office-map-sprite-frame-4 {
+  0%,
+  24.99% {
+    opacity: 1;
+  }
+  25%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes office-map-sprite-frame-6 {
+  0%,
+  16.66% {
+    opacity: 1;
+  }
+  16.67%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes office-map-blink {
+  0%,
+  48% {
+    opacity: 1;
+  }
+  49%,
+  100% {
+    opacity: 0.25;
+  }
+}
+
+@keyframes office-map-paw {
+  0%,
+  70% {
+    opacity: 0.2;
+  }
+  85% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.35;
+  }
+}
+
+/* 玻璃态效果 */
+.glass {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.dark .glass {
+  background: rgba(0, 0, 0, 0.8);
+}

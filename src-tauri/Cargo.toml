@@ -1,0 +1,41 @@
+[package]
+name = "agent-salon"
+version = "0.1.0"
+description = "Agent Salon desktop app"
+authors = ["shinmuchen"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "agent_salon_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+anyhow = "1"
+axum = { version = "0.8", features = ["multipart"] }
+chrono = { version = "0.4", features = ["serde"] }
+calamine = "0.26"
+csv = "1"
+dirs = "6"
+docx-rs = "0.4"
+pdf-extract = "0.7"
+printpdf = "0.7"
+quick-xml = "0.36"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+rusqlite = { version = "0.32", features = ["bundled"] }
+rust_xlsxwriter = "0.80"
+tokio = { version = "1", features = ["net", "rt-multi-thread", "time"] }
+tauri = { version = "2", features = ["tray-icon"] }
+tauri-plugin-autostart = "2"
+tauri-plugin-opener = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml = "0.8"
+tower-http = { version = "0.6.8", features = ["cors", "limit"] }
+rand = "0.10.1"
+uuid = { version = "1", features = ["v4"] }
+zip = "2"

@@ -1,0 +1,30 @@
+name: SalonMobile
+options:
+  minimumXcodeGenVersion: 2.45.0
+settings:
+  base:
+    SWIFT_VERSION: 6.0
+targets:
+  SalonMobile:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: Sources
+      - path: Resources
+    dependencies:
+      - sdk: libsqlite3.tbd
+    info:
+      path: SalonMobile/Info.plist
+      properties:
+        UILaunchScreen: {}
+        NSPhotoLibraryUsageDescription: 用于选择并保存你的本地头像。
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.shinmuchen.SalonMobile
+        PRODUCT_NAME: SalonMobile
+        SUPPORTS_MACCATALYST: NO
+        TARGETED_DEVICE_FAMILY: 1,2
+        CODE_SIGN_STYLE: Automatic
+    scheme:
+      gatherCoverageData: false
