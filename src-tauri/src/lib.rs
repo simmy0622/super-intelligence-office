@@ -18,6 +18,13 @@ use tauri_plugin_autostart::MacosLauncher;
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
     tauri::Builder::default()
+        .plugin(tauri_plugin_single_instance::init(|app, _args, _cwd| {
+            if let Some(window) = app.get_webview_window("main") {
+                let _ = window.show();
+                let _ = window.unminimize();
+                let _ = window.set_focus();
+            }
+        }))
         .plugin(tauri_plugin_autostart::init(MacosLauncher::LaunchAgent, None))
         .plugin(tauri_plugin_opener::init())
         .on_window_event(|window, event| {
@@ -27,7 +34,7 @@ pub fn run() {
             }
         })
         .setup(|app| -> Result<(), Box<dyn std::error::Error>> {
-            let show = MenuItem::with_id(app, "show", "Show Agent Salon", true, None::<&str>)?;
+            let show = MenuItem::with_id(app, "show", "显示超级智能办公室", true, None::<&str>)?;
             let quit = MenuItem::with_id(app, "quit", "Quit", true, None::<&str>)?;
             let menu = Menu::with_items(app, &[&show, &quit])?;
             let icon = app
